@@ -1,0 +1,160 @@
+@import "../../scss/variables";
+
+.card {
+    .progress {
+        max-width: 50px;
+        height: 10px;
+        border-radius: 20px;
+        .progress-bar {
+            border-radius: 20px;
+        }
+    }
+
+    &.block {
+        display: block;
+    }
+    &.fix-height {
+        @media (min-width: 576px) {
+            min-height: 305px;
+        }
+
+        @media (min-width: 1700px) {
+            height: 365px;
+        }
+    }
+    &.scroll {
+        overflow: auto;
+    }
+    &.tasks {
+        border-top-left-radius: 0;
+        @media (max-width: 575.98px) {
+            border-top-right-radius: 0;
+        }
+
+        .card-body {
+            tr > td {
+                &:last-child:not(.dataTables_empty) {
+                    text-align: center;
+                    padding-right: 0.5em;
+                    font-size: 2.3rem;
+                    line-height: 0.5rem;
+                    color: #b8c4cb;
+                }
+            }
+            tr > th {
+                &:last-child:not(.dataTables_empty) {
+                    text-align: right;
+                    padding-right: 1.1rem;
+                    font-size: 1.7rem;
+                    line-height: 0.9rem;
+                    color: lighten($gray-slate, 15%);
+                }
+            }
+        }
+    }
+    border: 0;
+    box-shadow: $shadow-primary;
+    border-radius: 10px;
+    .card-body {
+        padding: $card-padding-x;
+        &.table {
+            padding: 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            tr > td, tr > th {
+                padding-right: 10px;
+                padding-left: 0.4rem;
+                color: #36475a;
+                line-height: 1.375rem;
+                &:first-child {
+                    padding-left: 0.8rem;
+                    @media (min-width: 576px) {
+                        padding-left: $padding-layout-lg;
+                    }
+                }
+            }
+            tr > th {
+                color: #8091a5;
+                font-weight: 600;
+            }
+            h4.card-title {
+                padding: 0 1.5rem;
+                margin: 0;
+                border-bottom: 1px solid #ebedf2;
+                line-height: 60px;
+                @media (min-width: 1700px) {
+                    line-height: 65px;
+                }
+                @media (max-width: 767.98px) {
+                    text-align: center;
+                }
+            }
+        }
+        &.overview {
+            padding: 0.8rem 1.1rem;
+            @media (min-width: 768px) {
+                padding: 1.2rem 1.5rem;
+            }
+
+            .col-md-3 {
+                padding-right: 0;
+            }
+            h6 {
+                color: $gray-slate;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            .col-md-3 {
+                &:nth-child(-n+2) {
+                    margin-bottom: 10px;
+                }
+                @media (min-width: 576px) {
+                    &:nth-child(-n+2) {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:first-child {
+                    h1 {
+                        color: $blue;
+                    }
+                }
+                &:nth-child(2) {
+                    h1 {
+                        color: $black-blue;
+                    }
+                }
+                &:nth-child(3) {
+                    h1 {
+                        color: $red;
+                    }
+                }
+                &:nth-child(4) {
+                    h1 {
+                        color: $green;
+                    }
+                }
+            }
+        }
+        + .card-body {
+            padding-top: 1rem;
+        }
+    }
+    .card-title {
+        margin-bottom: .75rem;
+        text-transform: capitalize;
+        font-size: 1.125rem;
+    }
+    &.card-rounded {
+        border-radius:5px;
+    }
+    &.card-img-holder {
+        position: relative;
+        .card-img-absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+}

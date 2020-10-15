@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Book.eot');
+  src: url('../font/Tofino/Tofino-Book.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Book.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Bold.eot');
+  src: url('../font/Tofino/Tofino-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Bold.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Thin.eot');
+  src: url('../font/Tofino/Tofino-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Thin.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Light.eot');
+  src: url('../font/Tofino/Tofino-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Light.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Ultra.eot');
+  src: url('../font/Tofino/Tofino-Ultra.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Ultra.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Ultra.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Medium.eot');
+  src: url('../font/Tofino/Tofino-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Medium.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Black.eot');
+  src: url('../font/Tofino/Tofino-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Black.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tofino';
+  src: url('../font/Tofino/Tofino-Regular.eot');
+  src: url('../font/Tofino/Tofino-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('../font/Tofino/Tofino-Regular.woff2') format('woff2'),
+    url('../font/Tofino/Tofino-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+.font {
+  &_12 {
+    font-size: 0.75rem !important;
+  }
+  &_13 {
+    font-size: 0.8125rem !important;
+  }
+  &_14 {
+    font-size: 0.875rem !important;
+  }
+  &_15 {
+    font-size: 0.9375rem !important;
+  }
+  &_16 {
+    font-size: 1rem !important;
+  }
+  &_16,
+  &_16 p {
+    font-size: 1rem !important;
+  }
+  &_17 {
+    font-size: 1.0625rem !important;
+  }
+  &_18 {
+    font-size: 1.125rem !important;
+  }
+  &_19 {
+    font-size: 1.1875rem !important;
+  }
+  &_20 {
+    font-size: 1.25rem !important;
+  }
+  &_22 {
+    font-size: 1.375rem !important;
+  }
+  &_23 {
+    font-size: 1.4375rem !important;
+  }
+  &_24 {
+    font-size: 1.5rem !important;
+  }
+  &_26 {
+    font-size: 1.625rem !important;
+  }
+  &_28 {
+    font-size: 1.75rem !important;
+  }
+  &_30 {
+    font-size: 1.875rem !important;
+  }
+  &_36 {
+    font-size: 2.25rem !important;
+  }
+  &_40 {
+    font-size: 2.5rem !important;
+  }
+  &_46 {
+    font-size: 2.875rem !important;
+  }
+  &_50 {
+    font-size: 3.125rem !important;
+  }
+  &_60 {
+    font-size: 3.75rem !important;
+  }
+}
+
+.font {
+  &_dark_gray {
+    color: #8091a5 !important;
+  }
+  &_light_gray {
+    color: #b8c4cb !important;
+  }
+  &_dark_blue {
+    color: #36475a !important;
+  }
+  &_secon_light_gray {
+    color: #6a6a6a !important;
+  }
+}
+
+.text-primary {
+  color: $blue !important;
+}
+
+.text-green {
+  color: $green !important;
+}
+
+.text-yellow {
+  color: $orange !important;
+}
+
+.second-body-font{
+  color: $light-second-body;
+}
+.activeAnswer {
+  background: #ccc;
+}
+.answerItem {
+  cursor: pointer;
+}
+.text-red {
+  color: $red !important;
+}
+.icon_defult_color {
+  color: #b8c4cb;
+}
+
+@media (max-width: 992px) {
+  .font {
+    &_12 {
+      font-size: 0.75rem;
+    }
+    &_13 {
+      font-size: 0.8125rem;
+    }
+    &_14 {
+      font-size: 0.875rem;
+    }
+    &_15 {
+      font-size: 0.9375rem;
+    }
+    &_16 {
+      font-size: 1rem;
+    }
+    &_18 {
+      font-size: 1rem;
+    }
+    &_19 {
+      font-size: 1.0625rem;
+    }
+    &_20 {
+      font-size: 1.125rem;
+    }
+    &_24 {
+      font-size: 1.25rem;
+    }
+    &_30 {
+      font-size: 1.25rem;
+    }
+    &_40 {
+      font-size: 1.5625rem;
+    }
+    &_46 {
+      font-size: 1.5rem;
+    }
+    &_50 {
+      font-size: 1.625rem;
+    }
+    &_60 {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.font {
+  &_light {
+    font-weight: 300 !important;
+  }
+  &_normal {
+    font-weight: 400 !important;
+  }
+  &_medium {
+    font-weight: 600 !important;
+  }
+  &_bold {
+    font-weight: 700 !important;
+  }
+  &_italic {
+    font-style: italic;
+  }
+}
+
+.linkType {
+  color: $blue !important;
+  cursor: pointer;
+  &:hover{
+    color: $blue !important;
+    opacity: 0.8;
+  }
+}
+
+.darkLinkType {
+  color: $navy-one;
+}

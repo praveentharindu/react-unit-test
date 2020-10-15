@@ -1,0 +1,255 @@
+// COLORS //
+$blue:              #2D8EFF;
+$indigo:            #6610f2;
+$purple:            #6a008a;
+$pink:              #E91E63;
+$red:               #ff5652;
+$orange:            #ffb43b;
+$yellow:            #ffbf00;
+$green:             #32CE66;
+$teal:              #58d8a3;
+$cyan:              #57c7d4;
+$black:             #1D1603;
+$black-smoke:       #1F2C3D;
+$black-blue:        #36475a;
+$gray-slate:        #B8C1CB;
+$gray-blue:         #36475a;
+$gray-blue2:        #8CA6C3;
+$white:             #ffffff;
+$white-smoke:       #eef7ff;
+$violet:            #41478a;
+$darkslategray :    #2e383e;
+$dodger-blue :      #3498db;
+$navy-one :         #2e72aa;
+$lightgray:         #fcfdff;
+$mediumlight-gray:  #a8b4c0;
+$lightgray2:        #f2f5f9;
+$lightgray3:        #d9e4ec;
+$linkblue:          #e2ebf7;
+$simporange:        #fdbf00;
+$simp-blue3:        #518BBC;
+$darknavy:          #2c1993;
+$danger-lt:         #E87676;
+$light-blue:        #e6edf3;
+$sky-blue:          #E2EEFC;
+$info-blue:         #d9e0ef;
+$light-second-body: #657d89;
+
+$colors: (
+  blue:             $blue,
+  indigo:           $indigo,
+  purple:           $purple,
+  pink:             $pink,
+  red:              $red,
+  orange:           $orange,
+  yellow:           $yellow,
+  green:            $green,
+  teal:             $teal,
+  cyan:             $cyan,
+  white:            $white,
+  gray:             #434a54,
+  gray-light:       #aab2bd,
+  gray-lighter:     #e8eff4,
+  gray-lightest:    #e6e9ed,
+  gray-dark:        #0f1531,
+  black:            #000000,
+  black-smoke:      $black-smoke,
+  black-blue:        #36475A,
+  gray-slate:        #778F9B,
+  gray-blue:         #95a3b4,
+  gray-blue2:        #8CA6C3,
+  white-smoke:       #DEE1EB,
+  violet:            #41478a,
+  darkslategray:    #2e383e,
+  dodger-blue:      #3498db,
+  navy-one:         #084980,
+  );
+
+$theme-colors: (
+  primary:         #2D8EFF,
+  secondary:       #ffc000,
+  success:         #32CE66,
+  info:            #6cbcfb,
+  warning:         #FFB74D,
+  danger:          #FA4F4E,
+  danger-lt:       #E87676,
+  gray-blue:       #B8C1CB
+  );
+
+  $secondary-color: #ffc000,;      
+
+$theme-gradient-colors: (
+  primary: linear-gradient(to right,#59a6ff,#1b82fa),
+  );
+
+// SHADOWS
+$shadow-primary: 0 -2px 35px -8px rgba(161, 176, 205, 0.25);
+$shadow-tabs: 0 5px 35px rgba(161, 176, 205, 0.25);
+
+// COLOR VARIABLES //
+$content-bg: #FAFBFD;
+$footer-bg: $content-bg;
+$footer-color: color(dark);
+$border-color: #ebedf2;
+
+// FONTS//
+$type1-main: 'Tofino', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+$default-font-size: .906rem;
+$text-muted: #9c9fa6;
+$body-color: #343a40;
+$font-weight-semi-bold: 600;
+$font-weight-medium: 500;
+
+// FONT VARIABLES //
+$padding-layout-sm: 0.6rem;
+$padding-layout-md: 1rem;
+$padding-layout-lg: 1.7rem;
+
+// SIDEBAR //
+$sidebar-width-lg: 400px;
+$sidebar-width-mini: 185px;
+$sidebar-width-icon: 70px;
+$sidebar-width-main: 23%;
+$sidebar-light-bg: $white;
+$sidebar-light-menu-color: #3e4b5b;
+$sidebar-light-submenu-color: #888;
+$sidebar-light-menu-active-bg: $white;
+$sidebar-light-menu-active-color: theme-color(primary);
+$sidebar-light-menu-hover-bg: darken($sidebar-light-bg, 1%);
+$sidebar-light-menu-hover-color: darken($sidebar-light-menu-color, 10%);
+$sidebar-light-submenu-hover-color: darken($sidebar-light-submenu-color, 20%);
+$sidebar-light-menu-icon-color: #bba8bff5;
+$sidebar-light-menu-arrow-color: #9e9da0;
+$sidebar-light-menu-border-color: #f2edf3;
+$sidebar-dark-bg: #18151e;
+$sidebar-dark-menu-color: $white;
+$sidebar-dark-menu-active-bg: #282037;
+$sidebar-dark-menu-active-color: color(white);
+$sidebar-dark-menu-hover-bg: #282037;
+$sidebar-dark-menu-hover-color: color(white);
+$sidebar-dark-submenu-color: $sidebar-dark-menu-color;
+$sidebar-dark-submenu-hover-bg: initial;
+$sidebar-dark-submenu-hover-color: #ffffff;
+$sidebar-menu-font-size: $default-font-size;
+$sidebar-menu-padding-y: 1.6rem;
+$sidebar-menu-padding-x: 1.3rem;
+$sidebar-submenu-font-size: .8125rem;
+$sidebar-submenu-item-padding: .75rem 2rem .75rem 2rem;
+$sidebar-icon-font-size: 1.125rem;
+$sidebar-arrow-font-size: .625rem;
+$sidebar-profile-bg: transparent;
+$sidebar-profile-padding: .75rem 1.625rem .75rem 1.188rem;
+$sidebar-mini-menu-padding: .8125rem 1rem .8125rem 1rem;
+$sidebar-icon-only-menu-padding: .5rem 1.625rem .5rem 1.188rem;
+$sidebar-icon-only-submenu-padding: 0 0 0 1.5rem;
+$rtl-sidebar-submenu-padding: 0 1.5rem 0 0;
+$icon-only-collapse-width: 190px;
+$icon-only-menu-bg-light: $sidebar-light-menu-hover-bg;
+$icon-only-menu-bg-dark: $sidebar-dark-menu-hover-bg;
+
+
+// NAVBAR //
+$navbar-height: 60px;
+$navbar-menu-color: #9eafbe;
+$navbar-font-size: .875rem;
+$navbar-icon-font-size: 1.25rem;
+
+// BUTTONS //
+$button-fixed-width:        150px;
+$btn-padding-y:       .875rem;
+$btn-padding-x:       2.5rem;
+$btn-line-height:     1;
+$btn-padding-y-xs:    .5rem;
+$btn-padding-x-xs:    .75rem;
+$btn-padding-y-sm:    .50rem;
+$btn-padding-x-sm:    .81rem;
+$btn-padding-y-lg:    1rem;
+$btn-padding-x-lg:    3rem;
+$btn-font-size:       .875rem;
+$btn-font-size-xs:    .625rem;
+$btn-font-size-sm:    .875rem;
+$btn-font-size-lg:    .875rem;
+$btn-border-radius:         .1875rem;
+$btn-border-radius-xs:      .1875rem;
+$btn-border-radius-sm:      .1875rem;
+$btn-border-radius-lg:      .1875rem;
+
+// TOOLTIP VARIABLES //
+$tooltip-font-size:     .75rem;
+$tooltip-padding-y:     .4rem;
+$tooltip-padding-x:     .75rem;
+$tooltip-border-radius: .375rem;
+
+//  FORMS //
+$input-bg:                color(white);
+$input-border-radius:     2px;
+$input-placeholder-color: $black-blue;
+$input-font-size: .8125rem;
+$input-padding-y:       .875rem;
+$input-padding-x:       1.375rem;
+$input-line-height:     1;
+$input-padding-y-xs:    .5rem;
+$input-padding-x-xs:    .75rem;
+$input-padding-y-sm:    .50rem;
+$input-padding-x-sm:    .81rem;
+$input-padding-y-lg:    .94rem;
+$input-padding-x-lg:    1.94rem;
+
+//  DROPDOWNS ///////
+$dropdown-border-color: $border-color;
+$dropdown-divider-bg:   $border-color;
+$dropdown-link-color:   $body-color;
+$dropdown-header-color: $body-color;
+
+// TABLES //
+$table-accent-bg: $content-bg;
+$table-hover-bg:  $content-bg;
+$table-cell-padding: .9375rem;
+$table-border-color: $border-color;
+$table-inverse-bg: #2a2b32;
+$table-inverse-color: color(white);
+
+// MEASUREMENT AND PROPERTIES //
+$boxed-container-width: 1200px;
+$border-property: 1px solid $border-color;
+$card-spacing-y: 2rem;
+$card-padding-y: 1.5rem;
+$card-padding-x: 1.2rem;
+$card-border-radius: .3125rem;
+$card-description-color: #76838f;
+$grid-gutter-width: 40px;
+$action-transition-duration: 0.25s;
+$action-transition-timing-function: ease;
+
+
+// MODALS //
+$modal-inner-padding:               15px;
+$modal-dialog-margin:               10px;
+$modal-dialog-margin-y-sm-up:       30px;
+$modal-content-bg:                  $content-bg;
+$modal-content-box-shadow-xs:       0 3px 9px rgba($black,.5);
+$modal-content-box-shadow-sm-up:    0 5px 15px rgba($black,.5);
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+$modal-header-border-color:         $border-color;
+$modal-content-border-color:        $border-color;
+$modal-footer-border-color:         $border-color;
+$modal-header-padding-x:              26px;
+$modal-header-padding-y:              25px;
+$modal-body-padding-x:                26px;
+$modal-body-padding-y:                35px;
+$modal-footer-padding-x:              31px;
+$modal-footer-padding-y:              15px;
+$modal-lg:                          90%;
+$modal-md:                          500px;
+$modal-sm:                          300px;
+$modal-transition:                  transform .4s ease;
+
+//  TABS VARIABLES //
+$nav-tabs-border-color:             #ebedf2;
+$nav-tabs-link-bg:                  #f6f8fa;
+$nav-tabs-link-color:               #000000;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-border-color;
+$nav-tabs-link-active-color:        $body-color;
+$nav-tabs-link-active-bg:           $white;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color $nav-tabs-link-active-bg;

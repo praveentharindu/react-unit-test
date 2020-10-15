@@ -1,0 +1,89 @@
+@import "../../scss/variables";
+
+@mixin button-inverse-variant($color, $color-hover: $white) {
+    background-color: rgba($color, 0.2);
+    background-image: none;
+    border-color: rgba($color, 0);
+    &:not(.btn-inverse-light) {
+        color: $color;
+    }
+    @include hover {
+        color: $color-hover;
+        background-color: $color;
+        border-color: $color;
+    }
+
+    &.focus,
+    &:focus {
+        box-shadow: 0 0 0 3px rgba($color, 0.5);
+    }
+    &.disabled,
+    &:disabled {
+        color: $color;
+        background-color: transparent;
+    }
+    &.active,
+    &:active,
+    .show > &.dropdown-toggle {
+        color: $color-hover;
+        background-color: $color;
+        border-color: $color;
+    }
+}
+
+@mixin button-gradient-variant($value) {
+    background: $value;
+    border: 0;
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show > &.dropdown-toggle {
+        background: $value;
+    }
+    &:hover {
+        opacity: .9;
+    }
+    &:not(.btn-gradient-light) {
+        color: $white;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $white;
+        }
+    }
+    @include transition(opacity 0.3s ease);
+}
+
+button.btn.actionItem_btn {
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #eee;
+    color: #1F2C3D ;
+    font-size: 1.125rem;
+    padding:  1.125rem;
+    box-shadow: 0 4px 15px -3px rgba(161, 176, 205, 0.31);
+    min-width: 280px;
+    text-align: left;
+    font-weight: 500;
+    &:hover, &:active, &.active, &.active:focus{
+        background-color: #f3f4f6 !important;
+        color: #1F2C3D !important;
+        box-shadow: none;
+        border: 1px solid #eee !important;
+    }
+    &:focus{
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 15px -3px rgba(161, 176, 205, 0.31);
+    }
+    &:disabled {
+        cursor:  no-drop;
+        color: #1F2C3D ;
+        box-shadow: none;
+        border: 1px solid #eee;
+        &:hover, &:focus {
+            background-color: white !important;
+        }
+        &:active, &.active {
+            background-color: #f3f4f6 !important;
+        }
+    }
+}

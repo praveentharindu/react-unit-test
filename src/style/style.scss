@@ -1,0 +1,19 @@
+@import './scss/variables';
+@import './scss/typography';
+@import './scss/spacing';
+@import './scss/_sidebars';
+
+@import './scss/misc';
+@import './scss/mixins/misc';
+@import './scss/navbar';
+@import './scss/mixins/from';
+@import './scss/mixins/buttons';
+
+// Componets
+@import './scss/componet/buttons';
+@import './scss/componet/card';
+@import './scss/componet/table';
+@import './scss/componet/drop_down';
+
+// Hamburger Menu Icons
+// @import'../assets/iconfonts/mdi/scss/materialdesignicons.css';

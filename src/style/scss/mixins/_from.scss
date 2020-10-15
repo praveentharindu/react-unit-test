@@ -1,0 +1,343 @@
+@import "../../scss/variables";
+
+label, input, textarea, select {
+    font-size: 12px;
+    }
+    label {
+      margin: 0 0 5px 0;
+      font-weight: 600;
+      text-transform: uppercase;
+    color: #3e4d54;
+      }
+  .form-group {
+    .css-1okebmr-indicatorSeparator{
+      display: none !important;
+    }
+    .form-control{
+      &:disabled{
+        cursor: not-allowed;
+      }
+      &::placeholder{
+        font-weight: 400;
+      }
+    }
+    .error-message{
+      color:red;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    input, textarea, select {
+      border-color: #DCE2E9;
+      padding: .425rem .75rem;
+      background: $white;
+      }
+      input.checkBox {
+        height: auto;
+        margin-right: 5px;
+        &:disabled {
+          cursor: not-allowed;
+        }
+    }
+    input, select {
+      height: 45px;
+    }
+    textarea::placeholder, input::placeholder {
+      font-size: 0.906rem;
+      font-weight: 500;
+    }
+    .css-yk16xz-control{
+      border-color: #DCE2E9;
+      background: $white;
+      min-height: 45px;
+      &:hover{
+        border-color: #eff3f7;
+      }
+      .css-1g48xl4-IndicatorsContainer span {
+        background: transparent;
+      }    
+      
+    }
+   .css-109onse-indicatorSeparator{
+      background: transparent;
+    }  
+    .css-1hwfws3{
+      padding: 0;
+      .css-w8afj7-Input, .css-1uccc91-singleValue, .css-1g6gooi, .css-107lb6w-singleValue{
+        padding: 0 0 0 .75rem;
+        margin: 0;
+      }
+      .css-1wa3eu0-placeholder{
+        padding: 0 0 0 .75rem;
+        font-weight: 400;
+     }
+     .css-1wa3eu0-placeholder{
+       margin: 0;
+     }
+     .css-b8ldur-Input{
+      padding: 0 0 0 .75rem;
+       margin: 0;
+     }
+    }
+    #questionLicenses0 {
+      .css-1rhbuit-multiValue{
+        background: white;
+        padding: 0;
+        div {
+          padding: 0.45rem !important;
+          border: 1px solid #dce3ea;
+          border-radius: 3px;
+          box-shadow: 0 18px 20px -5px rgba(161, 176, 205, 0.18);
+          &:first-child{
+            border-radius: 3px 0 0 3px;
+            border-right: none;
+          }
+          &:last-child{
+            border-radius: 0 3px  3px  0;
+            cursor: pointer;
+          }
+        }
+        &:first-child{
+          margin-left: 0.325rem;
+        }
+      }
+    }
+    .css-1pahdxg-control:hover, .css-1pahdxg-control:focus{
+      border-color: #80bdff !important;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+    }
+    .answer_checkbox{
+      label{
+        display: flex;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+      }
+    }
+    label.checbox-label-wrp{
+      display: inline-flex;
+      -ms-flex-align: center!important;
+      align-items: center!important;
+      text-transform: none;
+      font-size: 14px;
+      color: #3e4d54 ;
+    }
+    .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button) {
+        right:90px !important;
+    }
+    .react-datepicker{
+      border:none;
+      box-shadow: 0 -2px 35px -8px rgba(161, 176, 205, 0.25);
+      background: white;
+      display: flex;
+      .react-datepicker__header{
+        background: white;
+        border: none;
+        .react-datepicker__day-names{
+          margin-bottom: 0.625rem;
+        }
+        .react-datepicker__current-month {
+          margin: 0.3125rem 0;
+          }
+      }
+      .react-datepicker__navigation--next {
+        // right:0.625rem;
+        // right: 5.625rem !important;
+        border-left-color: #3a96e0;
+        margin-top:0.3125rem;
+      }
+      .react-datepicker__navigation--previous{
+        left: 10px;
+        border-right-color:  #3a96e0;
+        margin-top:0.3125rem;
+      }
+    }
+    .react-datepicker__day-name {
+      font-weight: 600;
+    }
+    .react-datepicker__month{
+      background: white;
+    }
+    .react-datepicker__month-container {
+      box-shadow: 0 -2px 35px -8px rgba(161, 176, 205, 0.25);
+      background: white;
+    }
+    .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before{
+      border-top-color: #ffffff !important;
+    }
+    .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+      border-bottom-color: #ffffff !important;
+  }
+    .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle, .react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before {
+      border-top: none !important;
+      border-bottom-color: #ffffff !important;
+    }
+    .react-datepicker-popper[data-placement^="top"] .react-datepicker__triangle::before, .react-datepicker__year-read-view--down-arrow::before, .react-datepicker__month-read-view--down-arrow::before, .react-datepicker__month-year-read-view--down-arrow::before{
+      border-top-color: #ffffff !important;
+    }
+    .react-datepicker__day--keyboard-selected, .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range {
+      border-radius: 50%;
+      background-color: #3a96e0;
+      color: #fff;
+    }
+    .react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover{
+      border-radius: 50%;
+    }
+    .mdi-calendar-blank{
+      position: absolute;
+      right: 1.5625rem;
+      top: 2.1875rem;
+      color: #b3bdc9;
+    }
+
+    .css-1rhbuit-multiValue{
+      background: #fbfbfb;
+      box-shadow: 0 4px 8px -3px rgba(161, 176, 205, 0.31);
+      border: 1px solid #eaf1f6;
+      border-radius: 5px;
+      margin: 7px 4px 7px 8px;
+    }
+
+    .css-12jo7m5{
+      padding: 5px 10px !important;
+      -ms-flex-align: center!important;
+      align-items: center!important;
+      display: flex;
+    }
+
+    .css-1alnv5e {
+      padding: 5px 8px !important;
+      border-radius: 0 5px 5px 0 !important;
+      -ms-flex-align: center!important;
+      align-items: center!important;
+      cursor: pointer;
+      &:hover{
+        background: $lightgray2;
+      }
+      svg{
+        height: 18px;
+        width: 20px;
+        fill: $gray-slate;
+      }
+    }
+  }
+
+ .list-group-item-light{
+   background: transparent;
+ }
+
+
+  // Text Editero
+
+  .ql-toolbar.ql-snow {
+    border: 1px solid #e4edf5;
+    background: $lightgray2;
+    border-radius: 5px 5px 0 0;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid #e4edf5;
+  border-radius:  0 0 5px 5px;
+  background: $white;
+}
+
+.ql-editor, .dropzone{
+  min-height: 100px;
+  background: $lightgray;
+  border-radius: 0 0 5px 5px;
+}
+ 
+.ant-checkbox-indeterminate .ant-checkbox-inner::after{
+  height: 3px !important; 
+}
+
+input[type="text"]:disabled:has(> div) { 
+  background:red;
+ }
+
+
+
+
+// Popover convert to tooltip style
+
+.tooltip_view{
+  min-width: 180px;
+  .popover-body{
+      color: #fff;
+      text-align: left;
+      text-decoration: none;
+      word-wrap: break-word;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius: 4px;
+      -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      ul{
+        padding: 0;
+        margin: 0;
+        li{
+          display: flex;
+          padding-top: 0.625rem;
+          &:first-child{
+            padding-top: 0;
+          }
+          &:hover{
+            background: transparent;
+          }
+          span{
+            color: white;
+          }
+        }
+      }
+  }
+  &.bottom{
+    .arrow::after{
+      border-top-color:rgba(0, 0, 0, 0);
+    }
+    .arrow::before{
+      border-top-color: rgba(0, 0, 0, 0.75);
+    }
+  }
+  .arrow::after{
+    top: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.75);
+    border-width: 0 .5rem .5rem .5rem;
+  }
+  .arrow::before{
+    border-top-color: transparent;
+  }
+}
+
+.tooltip-inner{
+  p{
+    color: #fff;
+    text-align: left;
+  }
+}
+.user_list_pop_over{
+  position: relative;
+  background-color: #dbdbdb;
+  border: 2px solid white;
+  border-radius: 100%;
+  height: 45px;
+  line-height: 45px;
+  width: 45px;;
+  span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #818182;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+
+ 
+
+
+
+
