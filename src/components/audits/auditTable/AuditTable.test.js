@@ -26,14 +26,18 @@ const setup = (props = {}) => {
   return shallow(<AuditTable {...setupProps} />);
 };
 
-test('validate audit table props types', () => {
-  checkProps(AuditTable, defaultProps);
+describe('validate props types', () => {
+  test('test validate audit table props types', () => {
+    checkProps(AuditTable, defaultProps);
+  });
 });
 
-test('render audit table component', () => {
-  const wrapper = setup(defaultProps);
-  const auditTableElement = findByTestAttr(wrapper, 'audit-table-component');
-  expect(auditTableElement.length).toBe(1);
+describe('render audit table component', () => {
+  test('test audit table component', () => {
+    const wrapper = setup(defaultProps);
+    const auditTableElement = findByTestAttr(wrapper, 'audit-table-component');
+    expect(auditTableElement.length).toBe(1);
+  });
 });
 
 describe('render audit table', () => {

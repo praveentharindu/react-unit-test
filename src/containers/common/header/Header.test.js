@@ -34,10 +34,12 @@ const setup = (props = {}) => {
   return shallow(<Header {...setupProps} />);
 };
 
-test('render header menu component', () => {
-  const wrapper = setup(loUserData);
-  const headerElement = findByTestAttr(wrapper, 'header-component');
-  expect(headerElement.length).toBe(1);
+describe('render header menu component', () => {
+  test('test header menu component', () => {
+    const wrapper = setup(loUserData);
+    const headerElement = findByTestAttr(wrapper, 'header-component');
+    expect(headerElement.length).toBe(1);
+  });
 });
 
 describe('render header menu items', () => {
@@ -53,4 +55,3 @@ describe('render header menu items', () => {
     expect(headerElement.length).toBe(1);
   });
 });
-
