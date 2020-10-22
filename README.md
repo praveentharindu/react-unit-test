@@ -1,3 +1,5 @@
+## REACT UNIT TEST POC
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -54,7 +56,7 @@ REACT_APP_ENVIRENMENT=dev
 
 ```
 
-## Learn More resources
+## Learn More resources for unit test
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
