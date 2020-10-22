@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button, Container } from 'react-bootstrap';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
@@ -8,12 +8,24 @@ import { CommonModal } from '../../components/common/modal/CommonModal';
 import { AuditTable } from '../../components/audits/auditTable/AuditTable';
 import { AuditAddEditModal } from '../../components/audits/auditAddEditModal/AuditAddEditModal';
 import { SystemHelper } from '../../helper/SystemHelper';
+import { filterCustomArray } from '../../utility/Core';
 
 import './Audit.css';
 
 export const Audits = props => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isEditModal, setEditModal] = useState({});
+  const [filteredLocations, setFilteredLocations] = useState([]);
+
+  const allLocationList = SystemHelper.SAMPLE_LOCATION_LIST;
+  const filterAttribute = 'state';
+  const filterAttributeVal = 5;
+
+  useEffect(() => {
+    setFilteredLocations(
+      filterCustomArray(allLocationList, filterAttribute, filterAttributeVal)
+    );
+  }, [allLocationList]);
 
   return (
     <Container fluid className="main-wrap" data-test="audits-main-component">
