@@ -19,30 +19,21 @@ const sampleResult = [
 describe('starting custom array filteration', () => {
   describe('test custom array function params', () => {
     test('test first param', () => {
-      const filteredDataArray = filterCustomArray(
-        '',
-        sampleAttribute,
-        sampleAttributeValue
-      );
-      expect(filteredDataArray).toBeType('array');
+      expect(() => {
+        filterCustomArray(null, sampleAttribute, sampleAttributeValue);
+      }).toThrow();
     });
 
     test('test second param', () => {
-      const filteredDataArray = filterCustomArray(
-        sampleLocationArray,
-        '',
-        sampleAttributeValue
-      );
-      expect(filteredDataArray).toBeType('array');
+      expect(() => {
+        filterCustomArray(sampleLocationArray, null, sampleAttributeValue);
+      }).toThrow();
     });
 
     test('test third param', () => {
-      const filteredDataArray = filterCustomArray(
-        sampleLocationArray,
-        sampleAttribute,
-        ''
-      );
-      expect(filteredDataArray).toBeType('array');
+      expect(() => {
+        filterCustomArray(sampleLocationArray, sampleAttribute, null);
+      }).toThrow();
     });
   });
 

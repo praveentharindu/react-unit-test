@@ -20,5 +20,7 @@ export const SystemHelper = Object.freeze({
     { id: 5, name: 'Loc 3', state: 5 },
     { id: 6, name: 'Loc 4', state: 5 },
     { id: 7, name: 'Loc 5', state: 2 }
-  ]
+  ],
+
+  ERROR_INVALID_PARAMETERS: 'You must provide a valid parameters'
 });
