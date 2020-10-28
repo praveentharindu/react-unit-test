@@ -37,7 +37,7 @@ describe('starting custom array filteration', () => {
     });
   });
 
-  describe('check fucntion parameter types', () => {
+  describe('check function parameter types', () => {
     test('test custom array filteration', () => {
       expect(sampleLocationArray).toBeType('array');
       expect(sampleAttribute).toBeType('string');
