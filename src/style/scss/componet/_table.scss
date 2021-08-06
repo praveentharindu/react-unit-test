@@ -140,7 +140,7 @@ tbody tr {
     position: absolute;
     bottom: 0;
     width: 100%;
-    .pagination_s_e{
+    .pagination_s_e {
       color: #aec0d4;
     }
     @media (min-width: 576px) {
@@ -387,7 +387,7 @@ table.dataTable {
   .card .card-body.table tr > th:first-child {
     padding-left: 1.7rem;
   }
-  table.simplifyaTable.action_items.table {
+  table.sampleTable.action_items.table {
     tr {
       th:first-child,
       td:first-child {

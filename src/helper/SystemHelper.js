@@ -1,5 +1,5 @@
 export const SystemHelper = Object.freeze({
-  PROJECT_NAME: 'Simplifya',
+  PROJECT_NAME: 'TEST-POC',
   MAIN_MENU: {
     AUDITS: 'Audits',
     QUESTIONS: 'Questions'

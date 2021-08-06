@@ -3052,8 +3052,8 @@ table.dataTable {
 @media (min-width: 576px) {
   .card .card-body.table tr > td:first-child, .card .card-body.table tr > th:first-child {
     padding-left: 1.7rem; }
-  table.simplifyaTable.action_items.table tr th:first-child,
-  table.simplifyaTable.action_items.table tr td:first-child {
+  table.sampleTable.action_items.table tr th:first-child,
+  table.sampleTable.action_items.table tr td:first-child {
     width: 100px; } }
 
 .sidebar.task .dropdown-menu.main {
