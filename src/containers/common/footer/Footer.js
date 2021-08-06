@@ -10,7 +10,7 @@ export const Footer = props => {
     <footer className="footer-container">
       <Col md="12">
         <div className="copyright-text">
-          Copyright &copy; 2016-20, Simplifya, LLC. All Rights Reserved.
+          Copyright &copy; 2016-20, LLC. All Rights Reserved.
         </div>
       </Col>
     </footer>
