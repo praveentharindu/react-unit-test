@@ -11,7 +11,7 @@ export const AuditTable = props => {
       striped
       bordered
       hover
-      className="mt-10 new-table table simplifyaTable auditTemplateTable"
+      className="mt-10 new-table table sampleTable auditTemplateTable"
       data-test="audit-table-component"
     >
       <thead>
